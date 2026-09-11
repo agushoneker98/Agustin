@@ -1,25 +1,22 @@
-import { CalculateMetadataFunction, Composition } from "remotion";
+import { Composition } from "remotion";
+import {
+  ProductShowcase,
+  getProductShowcaseDurationInFrames,
+} from "./ProductShowcase";
 
-type Props = {};
-
-const calculateMetadata: CalculateMetadataFunction<Props> = () => {
-  return {};
-};
+const FPS = 30;
+const WIDTH = 1080;
+const HEIGHT = 1920; // formato vertical: Reels / TikTok / Stories
 
 export const MyComposition = () => {
   return (
     <Composition
-      id="MyComp"
-      component={MyComponent}
-      durationInFrames={60}
-      fps={30}
-      width={1280}
-      height={720}
-      calculateMetadata={calculateMetadata}
+      id="ProductShowcase"
+      component={ProductShowcase}
+      durationInFrames={getProductShowcaseDurationInFrames(FPS)}
+      fps={FPS}
+      width={WIDTH}
+      height={HEIGHT}
     />
   );
-};
-
-export const MyComponent: React.FC<Props> = () => {
-  return null;
 };

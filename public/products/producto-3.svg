@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2E6E9"/>
+      <stop offset="100%" stop-color="#DCB8C2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg3)"/>
+  <rect x="140" y="520" width="800" height="880" rx="24" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="540" cy="940" r="220" fill="none" stroke="#B07A88" stroke-width="18"/>
+  <circle cx="540" cy="940" r="150" fill="#EDD9DE"/>
+  <text x="540" y="1560" font-family="Georgia, serif" font-size="58" fill="#6B3E4B" text-anchor="middle">Espejo Redondo</text>
+  <text x="540" y="1625" font-family="Georgia, serif" font-size="58" fill="#6B3E4B" text-anchor="middle">Decorativo</text>
+</svg>

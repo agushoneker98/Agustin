@@ -1,0 +1,23 @@
+CÓMO AGREGAR TUS FOTOS DE PRODUCTOS
+=====================================
+
+1. Sacá o elegí fotos de tus productos (idealmente buena luz, fondo prolijo).
+   Tamaño recomendado: 1080x1920 (vertical) o más grande, formato .jpg o .png.
+
+2. Subí las fotos a esta carpeta: public/products/
+
+3. Abrí el archivo: src/config.ts
+
+4. En la lista PRODUCTS, agregá o editá una línea por cada foto, por ejemplo:
+
+   {
+     image: "mi-cuadro.jpg",
+     title: "Cuadro Decorativo",
+     subtitle: "Desde $15.000",
+   },
+
+5. Podés borrar las imágenes de ejemplo (producto-1.svg, etc.) una vez que
+   tengas tus propias fotos y hayas actualizado config.ts.
+
+6. Para ver el video: npm run dev
+   Para exportarlo en .mp4: npx remotion render

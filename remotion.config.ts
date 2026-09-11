@@ -8,7 +8,10 @@
 import { Config } from "@remotion/cli/config";
 import { enableTailwind } from '@remotion/tailwind-v4';
 
-Config.setRspack(true);
+// rspack (the default bundler) fails silently in this environment: it
+// reports success but never writes bundle.js, which crashes the renderer.
+// webpack works reliably here, so it's forced off.
+Config.setRspack(false);
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.overrideBundlerConfig(enableTailwind);
