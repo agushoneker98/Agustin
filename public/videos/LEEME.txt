@@ -1,0 +1,4 @@
+Subí acá tu video (por ejemplo: mi-video.mp4).
+
+Después avisale a Claude el nombre del archivo que subiste para que
+actualice el proyecto y lo use en la edición.
